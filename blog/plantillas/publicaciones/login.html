@@ -1,0 +1,27 @@
+{% extends "publicaciones/base.html" %} <!-- DTL: Django Template Languaje -->
+{% block card-body %} 
+<div class="card-body">
+	<div class="container">
+
+		<div class="text-center text-muted mb-5">
+			<h2>Ingresar a mi Blog</h2> <!-- h2 Significa tamano -->
+		</div>
+	<form action="/blog/sign_in/" method="post">{% csrf_token%}				
+				<div class="form-floating mb-3">
+				  <input type="text" class="form-control" name="cuenta" placeholder="Cuenta">
+				  <label for="cuenta">Cuenta</label>
+				</div>
+				<div class="form-floating mb-3">
+				  <input type="password" class="form-control" name="clave" placeholder="Password">
+				  <label for="clave">Contrasena</label>
+				</div>
+
+				<div class="form-floating mb-3">
+					<button class="btn btn-primary btn-lg">Ingresar</button>
+				</div>
+	</form>
+
+	</div>
+
+</div>
+{% endblock %} 

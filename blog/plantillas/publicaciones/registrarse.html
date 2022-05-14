@@ -1,0 +1,26 @@
+{% extends "publicaciones/base.html" %} <!-- DTL: Django Template Languaje -->
+{% block card-body %} 
+<div class="card-body">
+	<div class="container">
+
+		<div class="text-center text-muted mb-5">
+			<h2>Registrarse en mi Blog</h2> <!-- h2 Significa tamano -->
+		</div>
+	
+		<div class="form-floating mb-3">
+		  <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+		  <label for="floatingInput">Email address</label>
+		</div>
+		<div class="form-floating mb-3">
+		  <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+		  <label for="floatingPassword">Password</label>
+		</div>
+
+		<div class="form-floating mb-5">
+			<button class="btn btn-primary btn-lg">Registrarse</button>
+		</div>
+
+	</div>
+
+</div>
+{% endblock %} 

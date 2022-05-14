@@ -1,0 +1,47 @@
+{% extends "publicaciones/base.html" %} <!-- DTL: Django Template Languaje -->
+{% block card-body %} 
+<div class="card-body">
+	<div class="container">
+
+		<div class="text-center text-muted mb-5">
+			<h2>{{mensaje}}</h2> <!-- h2 Significa tamano -->
+		</div>
+
+		<div class="text-center text-danger mb-5">
+			<h1>{{error1}}</h1> <!-- h2 Significa tamano -->
+		</div>
+
+	{% if ch_pwd1 == 0 %}  
+	<form action="/blog/mi_cuenta/" method="post">{% csrf_token%}	
+
+				<div class="form-floating mb-3">
+				  <input type="text" class="form-control" name="user_nm" value={{u_n.username}} placeholder="Nombre usuario" required>
+				  <label for="Nombre usuario">Nombre usuario</label>
+				</div>
+
+				<div class="form-floating mb-3">
+				  <input type="text" class="form-control" name="nombres" value={{u_n.first_name}} placeholder="Nombres" required>
+				  <label for="nombres">Nombres</label>
+				</div>
+
+				<div class="form-floating mb-3">
+				  <input type="text" class="form-control" name="apellidos" value={{u_n.last_name}} placeholder="Apellidos" required>
+				  <label for="apellidos">Apellidos</label>
+				</div>
+
+				<div class="form-floating mb-3">
+				  <input type="text" class="form-control" name="email"  value={{u_n.email}} placeholder="E-Mail" required>
+				  <label for="email">E-Mail</label>
+				</div>
+
+				<div class="form-floating mb-3">
+					<button class="btn btn-primary btn-lg">Actualizar</button>
+				</div>
+	</form>
+
+	{% endif %} 
+
+	</div>
+
+</div>
+{% endblock %} 

@@ -1,0 +1,57 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>Mi Proyecto</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/mi_blog.css' %}">
+
+	<link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet'>
+	<style>
+	body {
+	    font-family: 'Lobster';font-size: 22px;
+	}
+	</style>
+
+</head>
+<!-- <body style="background-color: skyblue;"> -->
+<body>
+<!-- holaaa  -->
+<!-- Target es para que no reeemplace la página actual -->
+<!-- <h1 style="color: #FF00A0;">Bienvenidos a mi Blog</h1>  -->
+<!-- Notación del color HTML/HEX: #RGB #FFFFFF  -->
+<h1 class="titulo">Bienvenidos a mi Blog</h1>
+<h4 class="texto">Este Blog fue creado como Hobby. En él aprendo practicando mis conocimientos en Django y Python.Si eres ingeniera o ingeniero, programador o programadora en latinoamérica y deseas mirar a Alemania, estudiar o simplemente viajar por Europa, este Blog es para tí!. Abajo se encuentran algunos links que te dirigirán a páginas web que me ayudaron en mi proceso de aprendizaje. En el link "Blog" encontraras mi Blog.
+También realicé un curso online en Intecap de desarrollo web, que solamente puedo recomendar y que pueden hacer desde cualquier lugar del mundo :).
+
+</h4>
+
+<h4 class="titulo">Mi sitio blog:</h4>
+<div>
+	<ol>
+		<li><a href="/admin/" target="_blank">Administración</a></li>
+		<li><a href="/blog/" target="_blank">Blog</a></li>
+	<!--	<li><a href="/site/" target="_blank">Plantilla-Original-Bienes raíces</a></li> -->
+	</ol>
+
+</div>
+
+<h4 class="titulo">Documentación:</h4>
+<div>
+	<ul>
+		<li><a href="https://www.python.org/" target="_blank">Python</a></li> <!-- Target es para que no reeemplace la página actual -->
+		<li><a href="https://www.djangoproject.com/" target="_blank">Django</a></li>
+		<li><a href="https://devdocs.io/" target="_blank">Devdocs</a></li>
+		<li><a href="https://www.intecap.edu.co/" target="_blank">Intecap &reg;</a></li>
+		<li><a href="https://www.postgresql.org/" target="_blank">Postgres</a></li>
+		<li><a href="https://getbootstrap.com/" target="_blank">Bootstrap</a></li>
+		<li><a href="https://startbootstrap.com/" target="_blank">Start Bootstrap</a></li>
+		<li><a href="https://www.templatemonster.com/" target="_blank">Template Monster</a></li>
+	</ul> <!-- Así creamos una lista ordenada -->
+</div> <!-- Así creamos una sección  -->
+
+<div id="ref_intecap"> <!-- identifica este elemento específico, eso se hace con id  -->
+	<a href="https://www.intecap.edu.co/" target="_blank">Intecap &reg;</a> <small>&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Autor: Anmavel &copy;</small>
+</div>
+</body>
+</html>
