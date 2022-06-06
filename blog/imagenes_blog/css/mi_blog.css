@@ -16,15 +16,16 @@ div a{
 #ref_intecap{
 	background-color: #FD954C;
 	padding-left: 15px;
-	text-align: center;
+	padding-right: 15px;
 	padding-bottom: 5px;
+	text-align: center;
 	margin-top: 5px;
 	font-family: Lobster;
 }
 .titulo{
  color: #2D52A2;
  font-family: Lobster;
- 
+ padding-top: 30px;
 }
 
 .texto{
@@ -33,6 +34,9 @@ div a{
  font-family: Lora;
  text-align: justify;
  padding-right: 15px;
+ padding-top: 15px;
+ padding-bottom: 15px;
+ padding-left: 5px;
  
 }
 
